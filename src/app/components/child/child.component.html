@@ -1,0 +1,26 @@
+<div id="child">
+  <h4>Child Component</h4>
+  <mat-card>
+    <mat-card-title>
+      Parent Favourite Dish
+    </mat-card-title>
+    <mat-card-content>
+      <p>
+      {{ parentFavDish }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+  <div>
+    <form>
+      <mat-form-field>
+        <input matInput name="favCountry" type="text"
+               placeholder="Favourite Country"
+               [(ngModel)]="favCountry">
+      </mat-form-field>
+      &nbsp;
+      <button mat-raised-button color="accent" (click)="sendData2Parent()">
+        Send Data To Parent
+      </button>
+    </form>
+  </div>
+</div>

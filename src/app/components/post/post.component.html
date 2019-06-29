@@ -1,0 +1,17 @@
+<div>
+  <h3>List of Blog Posts</h3>
+  <button mat-raised-button color="primary" (click)="createPost()">Create Post</button>
+  <div>
+    <mat-card class="example-card" *ngFor="let post of postList">
+      <mat-card-header>
+        <mat-card-title>{{ post.title }}</mat-card-title>
+        <mat-card-subtitle>Id: {{ post.id }}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{ post.body }}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

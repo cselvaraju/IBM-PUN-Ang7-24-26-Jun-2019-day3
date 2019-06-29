@@ -1,0 +1,8 @@
+.example-card {
+  max-width: 100%;
+}
+
+mat-card {
+  margin-bottom: 1em;
+  background-color: lightcyan;
+}

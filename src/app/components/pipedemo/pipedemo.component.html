@@ -1,0 +1,25 @@
+<div>
+  <h3>Pipe Demo Component</h3>
+  Enter some text
+  <input type="text" [(ngModel)]="text">
+  <p>
+    Original Text: {{ text }}
+    <br>
+    Uppercase: {{ text | uppercase }}
+    <br>
+    Lowercase: {{ text | lowercase }}
+    <br>
+    Titlecase: {{ text | titlecase }}
+    <br>
+    Reverse: {{ text | reversetext }}
+  </p>
+  <p>
+    The price is {{ price | currency:'\u20b9' }}
+  </p>
+  <p>
+    Today is: {{ today | date:'dd-MMMM-yyyy hh:mm:ss' | uppercase }}
+  </p>
+  <p>
+    Student is: {{ student | json }}
+  </p>
+</div>
